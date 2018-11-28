@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import App from 'components/App/App';
-import Topbar from 'components/Topbar/Topbar';
-import Product from 'components/Product/Product';
+
+import './main.scss';
+import App from './components/App/App';
+import Topbar from './components/Topbar/Topbar';
+import Product from './components/Product/Product';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
