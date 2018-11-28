@@ -1,10 +1,10 @@
 import React from 'react';
 import './Topbar.scss';
 
-const Topbar = React.memo(() => (
+const Topbar = () => (
   <nav id="Topbar">
     Navigation
   </nav>
-));
+);
 
 export default Topbar;

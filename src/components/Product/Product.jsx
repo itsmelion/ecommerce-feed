@@ -1,10 +1,10 @@
 import React from 'react';
 import './Product.scss';
 
-const Product = React.memo(() => (
+const Product = () => (
   <main>
     {}
   </main>
-));
+);
 
 export default Product;
