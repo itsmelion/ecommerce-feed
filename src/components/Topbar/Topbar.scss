@@ -1,7 +1,3 @@
-#Topbar {
-  padding: .2rem 2rem;
-}
-
 .logo-circle, .logo-green, .logo-orange, .logo-letter {
   fill: currentColor;
   transition: .4s;
@@ -25,8 +21,11 @@
   }
 }
 
-// Searchbar for aestethics
 #Topbar {
+  padding: .2rem 2rem;
+  box-shadow: 0 0 2pt rgba(39, 4, 50, .1), 0 1pt 4pt rgba(39, 4, 50, 0.08);
+
+  // Searchbar for aestethics
   input[type="search"] {
     border: 1pt solid transparent;
     border-radius: 6pt;

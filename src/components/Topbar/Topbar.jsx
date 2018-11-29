@@ -12,7 +12,7 @@ const Topbar = () => (
     {/* Search is here only for aestethics */}
     <input
       flex=""
-      className="hide-mobile mh2"
+      className="hide-mobile ml2"
       placeholder="Search"
       type="search"
       name="search"
