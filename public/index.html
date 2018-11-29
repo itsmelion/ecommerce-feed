@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="pl">
 <head>
   <base href="/" />
-  <meta charset="UTF-8" />
+  <meta charset="iso-8859-1" />
+  <meta http-equiv="Content-Language" content="pl" >
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
   <meta name="theme-color" content="%REACT_APP_THEME%" />
   <meta name="msapplication-TileColor" content="%REACT_APP_THEME%" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -10,14 +13,14 @@
   <meta name="apple-mobile-web-status-bar-style" content="black" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
-  <link rel="alternate" hreflang="en-GB" href="%REACT_APP_URL%?lang=en" />
-  <link rel="alternate" hreflang="pt-BR" href="%REACT_APP_URL%?lang=pt" />
-  <link rel="alternate" hreflang="he-IL" href="%REACT_APP_URL%?lang=he" />
+  <link rel="alternate" hreflang="en" href="%REACT_APP_URL%?lang=en" />
+  <link rel="alternate" hreflang="pt" href="%REACT_APP_URL%?lang=pt" />
+  <link rel="alternate" hreflang="pl" href="%REACT_APP_URL%?lang=pl" />
   <link rel="alternate" hreflang="x-default" href="%REACT_APP_URL%" />
-  <meta property="og:locale" content="en-GB" />
-  <meta http-equiv="content-language" content="en-GB" />
-  <meta property="og:locale:alternate" content="pt-BR" />
-  <meta property="og:locale:alternate" content="he-IL" />
+  <meta property="og:locale" content="en" />
+  <meta http-equiv="content-language" content="en" />
+  <meta property="og:locale:alternate" content="pt" />
+  <meta property="og:locale:alternate" content="pl" />
 
   <meta name="reply-to" content="%REACT_APP_EMAIL%" />
   <meta name="author" content="%REACT_APP_HERO_NAME%" />
@@ -63,7 +66,7 @@
     rel="preload"
     as="style"
     async
-    href="//fonts.googleapis.com/css?family=Assistant:400,700,800"
+    href="//fonts.googleapis.com/css?family=Muli:400,600,800,900&amp;subset=latin,latin-ext"
     onload="this.rel='stylesheet'"
   />
 
@@ -104,7 +107,7 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
 
-  <div id="root" flex column fill></div>
+  <main id="root" flex column fill></main>
 
   <div id="loading"><h1>Loading... <br>Carregando</h1></div>
 </body>
