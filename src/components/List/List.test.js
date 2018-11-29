@@ -1,9 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'enzyme';
+import { BrowserRouter as Router } from 'react-router-dom';
+import data from 'ads.json';
 import List from './List';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<List />, div);
-  ReactDOM.unmountComponentAtNode(div);
+let wrapper;
+
+beforeEach(() => {
+  wrapper = render(<Router><List /></Router>);
+});
+
+// More or less like an integration test
+it('Amount of Items rendered match data provided', () => {
+  const dataAmountItems = (() => {
+    let sum = 0;
+    data.forEach(({ ads }) => {
+      sum += ads.length;
+    });
+    return sum;
+  })();
+
+  expect(wrapper.find('li').length).toEqual(dataAmountItems);
 });
