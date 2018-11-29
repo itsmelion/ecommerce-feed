@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 
 import './main.scss';
-import App from './components/App/App';
+import List from './components/List/List';
 import Topbar from './components/Topbar/Topbar';
 import Product from './components/Product/Product';
 import * as serviceWorker from './serviceWorker';
@@ -21,7 +21,7 @@ ReactDOM.render(
     <>
       <Topbar />
       <Switch>
-        <Route exact path="/list" component={App} />
+        <Route exact path="/list" component={List} />
         <Route path="/list/:product" component={Product} />
         <Route component={Home} />
       </Switch>
