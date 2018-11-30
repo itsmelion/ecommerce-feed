@@ -1,3 +1,9 @@
+/*
+  This CSS uses the approach of Modules
+  Every class in the file is transformed to be unique
+  know more about css modules at: https://css-tricks.com/css-modules-part-1-need/
+*/
+
 .fadePurple {
   color: rgb(187, 142, 223);
 }

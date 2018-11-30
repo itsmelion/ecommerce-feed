@@ -58,7 +58,7 @@ class Product extends Component {
           <img src={thumbnail} alt="Default Thumbnail" />
         </section>
 
-        <aside className="pl1 mv2" flex="33">
+        <aside className="pl1 mv2 show-large" flex="33">
           <ul className="card">
             <h5 className="ph1 mv05 purple">Details</h5>
             {product.params.map(param => (

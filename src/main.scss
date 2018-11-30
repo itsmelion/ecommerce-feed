@@ -3,6 +3,7 @@
   its all thanks to Flamework, another project of mine
   really useful to use flexboxes.
 */
+
 @import 'vars';
 @import '~flamework';
 
@@ -13,3 +14,11 @@
 }
 
 .purple { color: $color; }
+
+.show-large {
+  display: block;
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    display: none;
+  }
+}
