@@ -1,15 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faHeart } from '@fortawesome/free-solid-svg-icons';
-// import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import ProductLegend from 'components/ProductLegend/ProductLegend';
 import thumbnail from './default-thumbnail.svg';
 import './ListItem.scss';
 
 const ListItem = React.memo(({ product }) => (
   <li flex="auto" className="row p1 ListItem">
     <article flex="" className="column card">
-      <Link flex="" to={`/list/${product.id}`}>
+      <Link
+        flex=""
+        to={{
+          pathname: `/list/${product.id}`,
+          state: product,
+        }}
+      >
         <img src={thumbnail} alt="Default Thumbnail" />
 
         <div className="p1">
@@ -17,14 +21,7 @@ const ListItem = React.memo(({ product }) => (
         </div>
       </Link>
 
-      <legend row="nowrap" className="p1">
-        <address flex="" className="mr1">
-          <FontAwesomeIcon className="pin-icon" icon={faMapMarkerAlt} />
-          {product.city_label}
-        </address>
-
-        <FontAwesomeIcon className="ml1 add-wishlist" icon={faHeart} />
-      </legend>
+      <ProductLegend city={product.city_label} />
     </article>
   </li>
 ));

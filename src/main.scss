@@ -5,3 +5,9 @@
 */
 @import 'vars';
 @import '~flamework';
+
+.card {
+  border: 1pt solid $white3;
+  border-radius: $radius;
+  background-color: #fefefe;
+}
