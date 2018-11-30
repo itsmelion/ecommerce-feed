@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import keyBy from 'lodash/keyBy';
 import ProductLegend from 'components/ProductLegend/ProductLegend';
+import ProductParameters from 'components/ProductParameters/ProductParameters';
 
 import thumbnail from './default-thumbnail.svg';
 import './Product.scss';
@@ -52,15 +53,18 @@ class Product extends Component {
             <p className="mv1 description">{product.description}</p>
           </header>
 
-          <ProductLegend city={product.city_label} />
+          <ProductLegend city={product.city_label} time={product.created} />
 
           <img src={thumbnail} alt="Default Thumbnail" />
         </section>
 
         <aside className="pl1 mv2" flex="33">
-          <div className="card">
-            data
-          </div>
+          <ul className="card">
+            <h5 className="ph1 mv05 purple">Details</h5>
+            {product.params.map(param => (
+              <ProductParameters key={param[0]} param={param} />
+            ))}
+          </ul>
         </aside>
       </div>
     );
