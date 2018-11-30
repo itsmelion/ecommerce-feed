@@ -1,0 +1,30 @@
+@import 'vars.scss';
+@import '~flamework/src/vars';
+
+.product {
+  background-image: url(./goo.png);
+  background-size: 35%;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+
+
+  section.card {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    max-width: 65%;
+    padding: 1em;
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      max-width: none;
+    }
+
+    h1 {
+      font-weight: 800;
+      line-height: 1.15;
+    }
+
+    .description {
+      color: $black8;
+    }
+  }
+}
