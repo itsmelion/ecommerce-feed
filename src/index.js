@@ -23,7 +23,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/list" component={List} />
         <Route path="/list/:product" component={Product} />
-        <Route component={Home} />
+        <Route component={Home} /> {/* acts like a 404 not found */}
       </Switch>
     </>
   </Router>,
