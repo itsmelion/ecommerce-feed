@@ -19,6 +19,11 @@ class Product extends Component {
 
   componentDidMount() {
     const { product } = this.state;
+
+    /*
+      in Real-life scenarios product come from API,
+      so instead of importing data, we fetch it.
+    */
     if (!product) this.fetchProduct(this.id);
   }
 
