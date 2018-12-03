@@ -10,5 +10,5 @@ Check the source of the project, and see the branching strategy.
 (Flow example: Feature => Develop => Master)
 
 ## Sources
-Project: https://github.com/itsmelion/ecommerce-feed.git
-Live Preview: http://olx.alia.ml/
+- Project: https://github.com/itsmelion/ecommerce-feed.git
+- Live Preview: http://olx.alia.ml/
