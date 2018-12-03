@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'enzyme';
 import { MemoryRouter as Router } from 'react-router-dom';
-import data from 'ads.json';
+import data from './ads.json';
 import List from './List';
 
 let wrapper;
