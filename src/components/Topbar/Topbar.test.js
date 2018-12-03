@@ -3,16 +3,17 @@ import { render } from 'enzyme';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Topbar from './Topbar';
 
-let wrapper;
-
-beforeEach(() => {
-  wrapper = render(<Router><Topbar /></Router>);
-});
+const wrapper = render(<Router><Topbar /></Router>);
+const homeButton = wrapper.find('a');
 
 it('Has a single button', () => {
-  expect(wrapper.find('a').length).toEqual(1);
+  expect(homeButton.length).toEqual(1);
 });
 
 it('Has a link to List', () => {
-  expect(wrapper.find('a').prop('href')).toEqual('/list');
+  expect(homeButton.prop('href')).toEqual('/list');
+});
+
+it('Has class .menu-logo', () => {
+  expect(homeButton.hasClass('menu-logo')).toBeTruthy();
 });
