@@ -1,0 +1,28 @@
+@import 'vars.scss';
+@import '~flamework/src/vars';
+
+.ProductLegend {
+  .location {
+    font-style: normal;
+    color: $black3;
+    font-size: .8em;
+  }
+
+  .pin {
+    margin-right: .5em;
+  }
+
+  .wishlist {
+    color: transparent;
+    cursor: pointer;
+
+    path {
+      stroke: #e11b77;
+      stroke-width: 2em;
+    }
+
+    &:hover {
+      color: #e11b77;
+    }
+  }
+}

@@ -10,8 +10,10 @@ module.exports = {
     flexBugs(),
     postcssPresetEnv({
       browsers: [
-        'last 4 versions',
-        'not ie < 10', // React doesn't support IE8 anyway
+        '>0.2%',
+        'not dead',
+        'not ie <= 11',
+        'not op_mini all',
       ],
     }),
   ],

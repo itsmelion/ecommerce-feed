@@ -1,0 +1,42 @@
+.logo-circle, .logo-green, .logo-orange, .logo-letter {
+  fill: currentColor;
+  transition: .4s;
+}
+
+.logo-circle { opacity: 0; }
+.logo-letter { transition-delay: .15s; }
+.logo-green { transition-delay: .3s; }
+.logo-orange { transition-delay: .45s; }
+
+.menu-logo {
+  display: block;
+  width: 3.5rem;
+  color: var(--theme, #9026B0) !important;
+
+  &:hover {
+    .logo-circle { opacity: .05; }
+    .logo-green { fill:#A4B63B; }
+    .logo-orange { fill:#EA7628; }
+    .logo-letter { fill: #9026B0 }
+  }
+}
+
+#Topbar {
+  padding: .2rem 2rem;
+  box-shadow: 0 0 2pt rgba(39, 4, 50, .1), 0 1pt 4pt rgba(39, 4, 50, 0.08);
+
+  // Searchbar for aestethics
+  input[type="search"] {
+    border: 1pt solid transparent;
+    border-radius: 6pt;
+    padding: .5em 1em;
+    background-color: rgba(#9026B0, .08);
+    outline: none;
+    color: var(--theme, #9026B0);
+
+    &::placeholder { color: var(--theme, #9026B0) }
+    &:focus {
+      border-color: var(--theme, #9026B0)
+    }
+  }
+}

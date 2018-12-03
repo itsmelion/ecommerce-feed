@@ -1,0 +1,15 @@
+@import 'vars.scss';
+@import '~flamework/src/vars';
+
+.ListItem {
+  width: 100%;
+  max-width: 33%;
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    max-width: 50%;
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    max-width: none;
+  }
+}

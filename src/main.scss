@@ -1,0 +1,24 @@
+/*
+  Enjoying my CSS, and layouting?
+  its all thanks to Flamework, another project of mine
+  really useful to use flexboxes.
+*/
+
+@import 'vars';
+@import '~flamework';
+
+.card {
+  border: 1pt solid $white3;
+  border-radius: $radius;
+  background-color: #fefefe;
+}
+
+.purple { color: $color; }
+
+.show-large {
+  display: block;
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    display: none;
+  }
+}
