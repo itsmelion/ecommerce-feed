@@ -11,10 +11,11 @@ const ListItem = React.memo(({ product }) => (
         flex=""
         to={{
           pathname: `/list/${product.id}`,
+          // to improve performance/network delegate product data to next route:
           state: product,
         }}
       >
-        <img src={thumbnail} alt="Default Thumbnail" />
+        <img src={product.image || thumbnail} alt="Default Thumbnail" />
 
         <div className="p1">
           <h4>{product.title}</h4>

@@ -6,10 +6,10 @@ $tablet-breakpoint:  992px;
 
 $white: lighten($color, 35%);
 
-$base-font: "Muli", "Segoe UI", "Open Sans",
+$base-font: "Muli",
   -apple-system,
   BlinkMacSystemFont,
   "Segoe UI",
   "Roboto",
   "Helvetica Neue", Arial, sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
