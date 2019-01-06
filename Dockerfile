@@ -1,4 +1,4 @@
-FROM node:11
+FROM node:alpine
 
 RUN echo '🐳 => Building e-Commerce List...'
 # Create app directory
